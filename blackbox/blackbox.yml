@@ -1,0 +1,4 @@
+---
+- hosts: blackbox
+  tasks:
+    - shell: echo "hello world" >> /tmp/ciao
