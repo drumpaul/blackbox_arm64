@@ -3,7 +3,7 @@
 sudo apt-get install software-properties-common
 sudo apt-add-repository ppa:ansible/ansible
 sudo apt-get update
-sudo apt-get install ansible
+sudo apt-get -y install ansible
 
 cp /etc/ansible/hosts /etc/ansible/hosts.orig
 echo "[blackbox]" >> /etc/ansible/hosts
