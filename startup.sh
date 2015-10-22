@@ -5,4 +5,4 @@ sudo apt-get -y install git ansible
 git clone https://github.com/drumpaul/blackbox
 cd blackbox
 
-ansible-playbook blackbox.yml -i hosts
+ansible-playbook blackbox.yml -i hosts --connection=local
