@@ -1,4 +1,4 @@
 ---
-- hosts: blackbox
+- hosts: localhost
   tasks:
     - shell: echo "hello world" >> /tmp/ciao
