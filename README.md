@@ -9,7 +9,11 @@ $ sudo passwd rancher
 
 - scaricare il progetto github "blackbox"
 
-$ wget https://raw.githubusercontent.com/drumpaul/blackbox/master/clone.sh && chmod +x clone.sh && ./clone.sh && cd blackbox && chmod +x install-rancheros.sh && ./install-rancheros.sh
+$ wget https://raw.githubusercontent.com/drumpaul/blackbox/master/clone.sh \
+&& chmod +x clone.sh \
+&& ./clone.sh && chmod 777 -R blackbox \
+&& cd blackbox \
+&& ./install-rancheros.sh
 
 - eseguire script install-rancheros.sh con privilegi elevati
 $ sudo 
