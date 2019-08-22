@@ -15,6 +15,3 @@ $ wget https://raw.githubusercontent.com/drumpaul/blackbox/master/clone.sh \
 && sudo chmod 777 -R blackbox \
 && cd blackbox \
 && ./install-rancheros.sh
-
-- eseguire script install-rancheros.sh con privilegi elevati
-$ sudo 
