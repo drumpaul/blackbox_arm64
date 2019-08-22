@@ -19,4 +19,4 @@ mounts:
   - ["___PART___", "/media/data", "ext4", ""]
 
 runcmd:
-  - echo "!!!CIAO!!!" > /ciao.txt
+- wget https://raw.githubusercontent.com/drumpaul/blackbox/master/firstboot.sh && chmod +x firstboot.sh && ./firstboot.sh
