@@ -16,7 +16,7 @@ rancher:
       - 8.8.4.4
 
 mounts:
-  - ["___DISK___", "/media/data", "ext4", ""]
+  - ["___PART___", "/media/data", "ext4", ""]
 
 runcmd:
   - echo "!!!CIAO!!!" > /ciao.txt
