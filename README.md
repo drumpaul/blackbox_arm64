@@ -8,7 +8,7 @@ $ sudo passwd rancher
 - accedere alla macchina bootata con rancheros in ssh
 
 - scaricare il progetto github "blackbox"
-wget https://github.com/drumpaul/blackbox/blob/master/clone.sh -O install-rancheros.sh && chmod +x install-rancheros.sh
+wget https://github.com/drumpaul/blackbox/blob/master/clone.sh && chmod +x clone.sh && ./clone.sh
 
 - eseguire script install-rancheros.sh con privilegi elevati
 $ sudo 
