@@ -12,10 +12,10 @@ echo
 echo $iface
 echo
 
-sudo fdisk -l -o Device,Size
+sudo fdisk -l -o ""
 echo
 
-echo "digita il disco su cui andrà installato il sistema operativo"
+echo "digita il disco (NON LA PARTIZIONE) su cui andrà installato il sistema operativo"
 read dev
 echo
 echo $dev
