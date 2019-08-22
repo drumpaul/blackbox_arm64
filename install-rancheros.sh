@@ -21,10 +21,17 @@ echo
 echo $dev
 echo
 
+echo "digita la partizione dati da montare"
+read part
+echo
+echo $part
+echo
+
 cp $src_cloud $dst_cloud
 
 sed -i "s/___MACADDRESS___/${iface}/" $dst_cloud
 sed -i "s+___DISK___+${dev}+" $dst_cloud
+sed -i "s+___PART___+${dev}+" $dst_cloud
 
 sudo ros config validate < cloud-config.yml
 
