@@ -1,0 +1,19 @@
+#cloud-config
+ssh_authorized_keys:
+  - ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAIB3UGfAyWLdy4AgtJsDU3CQ/M1Qyfba/ts+L6cin+yn/0Pg0B/50bvI5RyRrSvHS37uA2r9sNRmnbB5Q5X0adq7S6wn1i483ggn9dZpcE11lUqUsyeqKPJCtmu5YBGk5wthLnEquZIJRBdUoolirOV3jLIbmlhOHcsYjzsZd1ofAw== rancher@blackrancher
+
+rancher:
+  console: ubuntu
+  network:
+    interfaces:
+      "mac=___MACADDRESS___":
+        address: 192.168.1.46/24
+        gateway: 192.168.1.254
+    dns:
+      nameservers:
+      - 192.168.1.254
+      - 8.8.8.8
+      - 8.8.4.4
+
+mounts:
+  - ["___DISK___", "/media/data", "ext4", ""]
