@@ -19,4 +19,4 @@ mounts:
   - ["___DISK___", "/media/data", "ext4", ""]
 
 runcmd:
-  - echo "!!!CIAO!!!"
+  - echo "!!!CIAO!!!" > /ciao.txt
