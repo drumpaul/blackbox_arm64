@@ -9,7 +9,7 @@ $ sudo passwd rancher
 
 - scaricare il progetto github "blackbox"
 
-$ wget https://raw.githubusercontent.com/drumpaul/blackbox/master/clone.sh \
+$ wget https://raw.githubusercontent.com/drumpaul/blackbox/master/clone.sh \\
 && chmod +x clone.sh \
 && ./clone.sh \
 && sudo chmod 777 -R blackbox \
