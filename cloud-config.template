@@ -24,9 +24,8 @@ write_files:
     owner: root
     content: |
       #!/bin/bash
-      cd /tmp \
-        && wget https://raw.githubusercontent.com/drumpaul/blackbox/master/firstboot.sh \
+      wget https://raw.githubusercontent.com/drumpaul/blackbox/master/firstboot.sh \
         && chmod +x firstboot.sh \
         && ./firstboot.sh \
-        && rm -f /tmp/firstboot.sh /etc/rc.local \
+        && rm -f firstboot.sh /etc/rc.local \
         && ros c set write_files []
