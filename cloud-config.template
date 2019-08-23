@@ -24,6 +24,6 @@ write_files:
     owner: root
     content: |
       #!/bin/bash
-      touch /ok.txt
-      wget https://raw.githubusercontent.com/drumpaul/blackbox/master/clone.sh \
-        && chmod +x clone.sh
+      wget https://raw.githubusercontent.com/drumpaul/blackbox/master/firstboot.sh \
+        && chmod +x firstboot.sh \
+        && ./firstboot.sh
