@@ -7,3 +7,7 @@ wget https://github.com/rancher/rancher-compose/releases/download/v0.12.5/ranche
 tar xvzf rancher-compose-linux-amd64-v0.12.5.tar.gz
 
 mv rancher-compose-v0.12.5/rancher-compose /usr/local/bin/
+
+rm -rf /tmp/rancher*
+
+wget https://raw.githubusercontent.com/drumpaul/blackbox/master/docker-compose.yml
