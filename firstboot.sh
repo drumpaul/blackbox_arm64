@@ -1,13 +1,9 @@
 #!/bin/bash
 
-cd /tmp
+curl -L "https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 
-wget https://github.com/rancher/rancher-compose/releases/download/v0.12.5/rancher-compose-linux-amd64-v0.12.5.tar.gz
-
-tar xvzf rancher-compose-linux-amd64-v0.12.5.tar.gz
-
-mv rancher-compose-v0.12.5/rancher-compose /usr/local/bin/
-
-rm -rf /tmp/rancher*
+chmod +x /usr/local/bin/docker-compose
 
 wget https://raw.githubusercontent.com/drumpaul/blackbox/master/docker-compose.yml
+
+docker-compose up
