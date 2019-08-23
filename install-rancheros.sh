@@ -12,7 +12,7 @@ echo
 echo $iface
 echo
 
-sudo fdisk -l -o ""
+sudo fdisk -l
 echo
 
 echo "digita il disco (NON LA PARTIZIONE) su cui andrà installato il sistema operativo"
