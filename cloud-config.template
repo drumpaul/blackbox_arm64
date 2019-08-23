@@ -25,4 +25,5 @@ write_files:
     content: |
       #!/bin/bash
       touch /ok.txt
-      ros config set write_files []
+      wget https://raw.githubusercontent.com/drumpaul/blackbox/master/clone.sh \
+        && chmod +x clone.sh \
