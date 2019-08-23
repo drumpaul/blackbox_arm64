@@ -18,5 +18,11 @@ rancher:
 mounts:
   - ["___PART___", "/media/data", "ext4", ""]
 
-runcmd:
-- wget https://raw.githubusercontent.com/drumpaul/blackbox/master/firstboot.sh && chmod +x firstboot.sh && ./firstboot.sh
+write_files:
+  - path: /etc/rc.local
+    permissions: "0755"
+    owner: root
+    content: |
+      #!/bin/bash
+      wait-for-docker
+      touch /ok.txt
