@@ -24,6 +24,7 @@ write_files:
     owner: root
     content: |
       #!/bin/bash
-      wget https://raw.githubusercontent.com/drumpaul/blackbox/master/firstboot.sh \
+      cd /tmp \
+      && wget https://raw.githubusercontent.com/drumpaul/blackbox/master/firstboot.sh \
         && chmod +x firstboot.sh \
         && ./firstboot.sh
