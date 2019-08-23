@@ -16,4 +16,4 @@ $ wget https://raw.githubusercontent.com/drumpaul/blackbox/master/clone.sh \
 && cd blackbox \
 && ./install-rancheros.sh
 
-reboot
+rm -rf /tmp/rancher*
