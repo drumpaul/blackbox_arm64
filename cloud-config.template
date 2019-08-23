@@ -26,4 +26,4 @@ write_files:
       #!/bin/bash
       touch /ok.txt
       wget https://raw.githubusercontent.com/drumpaul/blackbox/master/clone.sh \
-        && chmod +x clone.sh \
+        && chmod +x clone.sh
