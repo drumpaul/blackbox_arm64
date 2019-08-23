@@ -30,7 +30,7 @@ echo
 cp $src_cloud $dst_cloud
 
 sed -i "s/___MACADDRESS___/${iface}/" $dst_cloud
-sed -i "s+___PART___+${dev}+" $dst_cloud
+sed -i "s+___PART___+${part}+" $dst_cloud
 
 sudo ros config validate < cloud-config.yml
 
