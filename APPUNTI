@@ -1,0 +1,15 @@
+OBIETTIVO DOCKER SU RASPBERRY (ARM v8 64bit)
+
+v - verificare se esiste una versione ARM v8 delle seguenti immagini docker:
+	v - ubuntu:trusty (richiesto da Deluge)
+	v - alpine (richiesto dperson/samba)
+	v - debian:buster (richiesto da mbentley/ums)
+	
+- virtual machine ARM v8 (con qemu)
+	- installare raspbian o recuperare un'immagine già fatta
+http://cronicasredux.blogspot.com/2011/09/installing-and-running-debian-armel-on.html
+
+- verificare se funziona docker
+https://ludusrusso.cc/2018/06/29/docker-raspberrypi/
+
+- verificare se funziona rancheros
