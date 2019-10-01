@@ -1,4 +1,12 @@
 version: '3'
 services:
-  test:
-    image: "hello-world"
+  sambatest:
+    image: "dperson/samba"
+    container_name: "samba"
+    ports:
+     - "139:139"
+     - "445:445"
+    volumes:
+     - "/home/cotlod:/mount"
+    restart: "always"
+    #    entrypoint: "-s \"data;/mount;yes;no;yes;all;no;comment]\" -p"
