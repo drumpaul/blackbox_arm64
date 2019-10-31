@@ -7,6 +7,12 @@ rancher:
   network:
     interfaces:
       "mac=___MACADDRESS___":
+        wifi_network: blackwifinet
+    wifi_networks:
+      blackwifinet:
+        ssid: "blackwifinet5"
+        psk: "12345678qwertyui"
+        scan_ssid: 1
         address: 192.168.1.46/24
         gateway: 192.168.1.254
     dns:
