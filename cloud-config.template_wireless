@@ -6,7 +6,7 @@ rancher:
   console: ubuntu
   network:
     interfaces:
-      "mac=___MACADDRESS___":
+      "mac=___MACADDRESS-WIRELESS___":
         wifi_network: blackwifinet
     wifi_networks:
       blackwifinet:
