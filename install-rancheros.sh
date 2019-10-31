@@ -14,7 +14,7 @@ case "$profile" in
 		ip link | awk '{print $2}'
 		echo
 
-		echo "digita il MAC address della scheda da configurare dall'elenco precedente"
+		echo "digita il MAC address della scheda LAN da configurare dall'elenco precedente"
 		read iface_wired
 		echo
 		echo $iface_wired
@@ -26,7 +26,7 @@ case "$profile" in
 		ip link | awk '{print $2}'
 		echo
 
-		echo "digita il MAC address della scheda da configurare dall'elenco precedente"
+		echo "digita il MAC address della scheda WLAN da configurare dall'elenco precedente"
 		read iface_wireless
 		echo
 		echo $iface_wireless
