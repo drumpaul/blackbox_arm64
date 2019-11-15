@@ -1,15 +1,14 @@
 INSTALLAZIONE
 
-- avviare la macchina con una iso di RancherOS
-- in console impostare la password per l'utente "rancher"
+- flashare l'immagine del sistema operativoper Raspberry (hyperios?)
 
-$ sudo passwd rancher
+- avviare la macchina e metterla in rete in modo che riesca a raggiungere internet (TODO - verifica procedura)
 
-- accedere alla macchina bootata con rancheros in ssh
+- accedere alla macchina in ssh
 
-- scaricare il progetto github "blackbox"
+- scaricare il progetto github "blackbox_arm64"
 
-$ wget https://raw.githubusercontent.com/drumpaul/blackbox/master/clone.sh \
+$ wget https://raw.githubusercontent.com/drumpaul/blackbox_arm64/master/clone.sh \
 && chmod +x clone.sh \
 && ./clone.sh \
 && sudo chmod 777 -R blackbox \
