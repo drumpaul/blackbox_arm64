@@ -1,6 +1,6 @@
 INSTALLAZIONE
 
-- flashare l'immagine del sistema operativoper Raspberry (hyperios?)
+- flashare l'immagine del sistema operativoper Raspberry (hypriot?)
 
 - avviare la macchina e metterla in rete in modo che riesca a raggiungere internet (TODO - verifica procedura)
 
