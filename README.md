@@ -1,1 +1,1 @@
-GOTO https://github.com/drumpaul/blackbox/blob/master/howto.txt
+GOTO https://github.com/drumpaul/blackbox_arm64/blob/master/howto.txt
