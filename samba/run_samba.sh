@@ -1,3 +1,5 @@
 #!/bin/bash
 
-docker run --name samba -p 139:139 -p 445:445 -v /home/cotlod:/mount -d dperson/samba -s "data;/mount;yes;no;yes;all;no;comment]" -p
+#DA TESTARE FONTE:
+#https://hub.docker.com/r/elswork/samba
+docker run -d -p 137:137/udp -p 138:138/udp -p 139:139 -p 445:445 -p 445:445/udp --hostname 'filer' -v /mnt/store/smb:/share/folder  elswork/samba -u "your_username:your_password" -s "FileShare:/share/folder:rw:your_username"
