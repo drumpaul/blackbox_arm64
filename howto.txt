@@ -11,6 +11,6 @@ INSTALLAZIONE
 $ wget https://raw.githubusercontent.com/drumpaul/blackbox_arm64/master/clone.sh \
 && chmod +x clone.sh \
 && ./clone.sh \
-&& sudo chmod 777 -R blackbox \
-&& cd blackbox \
-&& ./install-rancheros.sh
+&& sudo chmod 777 -R blackbox_arm64 \
+&& cd blackbox_arm64 \
+&& ./setup.sh
