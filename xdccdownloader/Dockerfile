@@ -9,4 +9,4 @@ RUN dpkg -i xdccdownloaderweb_1.3.7-1.deb \
 VOLUME /root
 EXPOSE 8888
 
-ENTRYPOINT /etc/init.d/XdccDownloaderWeb start
+CMD /etc/init.d/XdccDownloaderWeb start
