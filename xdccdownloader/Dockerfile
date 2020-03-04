@@ -13,4 +13,4 @@ VOLUME /root
 EXPOSE 8888
 
 ENTRYPOINT ["docker-entrypoint.sh"]
-CMD ["postgres"]
+CMD ["xdcc-web"]
