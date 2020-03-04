@@ -1,5 +1,8 @@
 FROM ubuntu:18.04
+
 COPY xdccdownloaderweb_1.3.7-1.deb /
+COPY docker-entrypoint.sh /usr/local/bin/
+
 RUN dpkg -i xdccdownloaderweb_1.3.7-1.deb \
   && apt update \
   && apt install -y python \
@@ -9,4 +12,5 @@ RUN dpkg -i xdccdownloaderweb_1.3.7-1.deb \
 VOLUME /root
 EXPOSE 8888
 
-CMD /etc/init.d/XdccDownloaderWeb start
+ENTRYPOINT ["docker-entrypoint.sh"]
+CMD ["postgres"]
