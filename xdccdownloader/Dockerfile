@@ -14,4 +14,4 @@ RUN chmod +x /start \
 VOLUME /root
 EXPOSE 8888
 
-CMD exec /bin/sh /start
+CMD exec /bin/bash /start
