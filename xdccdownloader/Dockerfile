@@ -15,4 +15,4 @@ RUN chmod +x /start \
 VOLUME /root
 EXPOSE 8888
 
-CMD exec nc -e /start -l 8888 -k
+CMD exec nc -e /start -l 8888 -k && exec python /opt/playxz/XdccDownloaderWeb/XdccDownloaderServer.pyc start
